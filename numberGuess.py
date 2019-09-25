@@ -5,11 +5,11 @@ numberOfGuesses=0
 lowGuessRange=1
 highGuessRange=1000000
 while not gameOver:
-    print("Enter a guess in range from ", lowGuessRange, "to ",highGuessRange)
-    playerGuess = int (input("Enter your guess: "))
     if(numberOfGuesses == 20):
         print("You've run out of guesses.")
         gameOver=True
+    print("Enter a guess in range from ", lowGuessRange, "to ",highGuessRange)
+    playerGuess = int (input("Enter your guess: "))
     if(theComputerNumber==playerGuess):
         print("You've guessed the number.")
         gameOver = True
